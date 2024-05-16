@@ -1,0 +1,4 @@
+name: ShootingMiniGame
+version: '${version}'
+main: kr.kro.izen.shootingminigame.ShootingMiniGame
+api-version: '1.20'
