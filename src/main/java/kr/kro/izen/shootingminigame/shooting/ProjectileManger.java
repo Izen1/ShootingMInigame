@@ -33,7 +33,6 @@ public class ProjectileManger implements ProjectileBuilder{
         Inventory inventory = player.getInventory();
         int count = 0;
 
-        // 오른손에 있는 아이템 갯수 포함
         for (ItemStack item : inventory.getContents()) {
             if (item != null && item.getType() == material && item.getItemMeta().getDisplayName().equals(name)) {
                 count += item.getAmount();
