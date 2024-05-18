@@ -1,5 +1,6 @@
 package kr.kro.izen.shootingminigame.world;
 
+import kr.kro.izen.shootingminigame.shooting.ProjectileManger;
 import kr.kro.izen.shootingminigame.shooting.TargetManger;
 import org.bukkit.*;
 import org.bukkit.command.CommandSender;
@@ -38,10 +39,6 @@ public class MiniGame extends BukkitCommand {
                     player.teleport(playerMap.get(player));
                     playerMap.remove(player);
                     player.sendMessage("플레이어의 원위치로 이동합니다!");
-                }
-                case "생성" -> {
-                    TargetManger targetManger = new TargetManger();
-                    targetManger.creatTarget(player.getLocation(), player);
                 }
             }
         }
